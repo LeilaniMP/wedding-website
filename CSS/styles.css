@@ -1,0 +1,336 @@
+/*
+Page Background: #E7F0E4
+#ACCAA1
+
+*/
+/* ___________________________________________page layouts_______________________________________________*/
+
+/* General */
+.body {
+  background-color: #f3f7f2;
+  max-width: 1224px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  justify-content: center;
+}
+/*_____________________________________________header styles______________________________________________*/
+
+h1 {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  font-style: normal;
+  padding: 20px;
+  margin-top: 80px;
+  margin-bottom: 0;
+  border-bottom: 0;
+  text-align: center;
+  letter-spacing: 5px;
+}
+h2 {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 200;
+  margin-top: 0;
+  padding: -10px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+h3 {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 800;
+}
+#important {
+  background-color: #dbe8d7;
+  font-family: "Cormorant Unright", serif;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.header-design {
+  border-radius: 10px;
+  background: rgba(246, 249, 245, 0.6);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(8px);
+}
+
+/*_________________________________________form styles_________________________________________________________*/
+
+form {
+  background-color: #dbe8d7;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.form-group input {
+  border: 1px solid #accaa1;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.form-group option {
+  font-family: "Cormorant Upright", serif;
+  font-size: 16px;
+}
+button {
+  background-color: #accaa1;
+  font-family: "Cormorant Unicase", serif;
+  font-size: medium;
+  font-weight: 800;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+select {
+  background-color: #dbe8d7;
+  font-family: "Cormorant Unicase", serif;
+  border-radius: 5px;
+}
+th {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 800;
+  font-style: normal;
+  padding: 10px;
+  font-size: 18px;
+}
+#info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+/*___________________________________________________link edit_____________________________________________________*/
+
+nav ul li a {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+}
+
+nav ul li a:hover {
+  background-color: #accaa120;
+  border-width: 0px 0 2px 0;
+  border-color: #364830;
+  border-style: solid;
+  border-radius: 2px;
+  padding: 10px 15px;
+}
+/*_______________________________________________________image_________________________________________________________________________*/
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.images,
+.images img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.upright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stacked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*________________________________________________________footer_________________________________________________________________________*/
+footer {
+  background-color: #dbe8d7;
+  padding: 10px;
+  text-align: center;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 800;
+  font-style: normal;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+footer a {
+  font-family: "Cormorant Upright", serif;
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: none;
+  color: #445a3c;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #364830;
+}
+/*__________________________________________________________media query_________________________________________________________________________*/
+
+/* responsive design for mobile devices */
+@media (max-width: 460px) {
+  #main {
+    display: block;
+    column-count: 1;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0 5px;
+  }
+
+  .stacked img,
+  .upright img {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  table {
+    width: 100%;
+    margin: 0 auto;
+  }
+  th {
+    font-size: 16px;
+  }
+  td {
+    font-size: 14px;
+  }
+  #info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+/* responsive design for tablets */
+@media (min-width: 461px) and (max-width: 810px) {
+  #main_content {
+    display: block;
+    column-count: 1;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 0px;
+  }
+
+  h2 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav ul li {
+    flex: 1 1 45%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 5px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  nav ul li {
+    flex: 1 1 45%; /* two items per row with space */
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .stacked,
+  .upright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px; /* Adjust as needed */
+    margin: 10px;
+  }
+
+  table {
+    width: 100%;
+    margin: 0 auto;
+  }
+  th {
+    font-size: 16px;
+  }
+  td {
+    font-size: 14px;
+  }
+}

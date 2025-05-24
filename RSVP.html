@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Leilani and Gordon's Wedding Website" />
+    <!-- This is my title I might change it, I don't like it that much -->
+
+    <title>RSVP</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Unicase:wght@300;400;500;600;700&family=Cormorant+Upright:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <header>
+      <div class="header-design">
+        <h1>Gordon & Leilani</h1>
+        <h2>From Best Friends to Soulmates | 04.24.29.</h2>
+      </div>
+      <nav>
+        <!-- my page links-->
+        <ul>
+          <li><a href="index.html">Our Story</a></li>
+          <li><a href="rules.html">Information</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Photos</a></li>
+          <li><a href="RSVP.html">RSVP</a></li>
+          <li><a href="registry.html">Registry</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <p>
+          Thanks for being part of our favorite love story. Let's celebrate!
+          Please let us know if you can make it by filling out the RSVP form
+          below. We can't wait to see you there!
+        </p>
+
+        <form action="submit_rsvp.php" method="POST">
+          <div class="form-group">
+            <label for="guest_name">Guest Name:</label>
+            <input type="text" id="guest_name" name="guest_name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="plus_one">Plus One Name:</label>
+            <input type="text" id="plus_one" name="plus_one" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="attending">Will you be attending?</label>
+            <select id="attending" name="attending" required>
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <button type="submit">Submit RSVP</button>
+        </form>
+        <p>
+          If you have any questions or need assistance, feel free to reach out
+          to us at
+          <a href="mailto:leilani.gordon1222@gmail.com"></a>
+        </p>
+      </div>
+    </main>
+    <!-- -------------------------------------footer-------------------------------------------->
+    <footer>
+      <p>
+        Copyright 2025 -
+        <a href="mailto:leilani.gordon1222@gmail.com">Leilani Pena.</a>&copy;
+        All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
